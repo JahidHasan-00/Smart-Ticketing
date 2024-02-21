@@ -108,9 +108,9 @@
 
             <!-- Greenline Paribahan -->
             <div class="container mx-auto">
-                <div class="flex justify-between rounded-3xl bg-white">
+                <div class="flex flex-col lg:flex-row justify-between rounded-3xl bg-white">
                     <div class="flex-1 p-8 space-y-6">
-                        <div class="flex gap-3">
+                        <div class="flex gap-3 flex-col lg:flex-row">
                             <img src="./assets/images/bus-logo.png" alt="bus-logo">
                             <div class="flex-1">
                                 <h3 class="font-raleway font-bold text-3xl">Greenline Paribahan</h3>
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                     
-                    <div>
+                    <div class="flex items-center justify-center rotate-90 lg:rotate-0">
                         <img src="./assets/images/info-devider.png" alt="">
                     </div>
                     <div class="font-raleway flex flex-col justify-center items-center py-12 px-12">
@@ -146,10 +146,268 @@
                 </div>
             </div>
 
-                <!-- Select Your Seat -->
-                <div>
-
+            <!-- Select Your Seat -->
+            <div class="flex flex-col lg:flex-row justify-between items-start container mx-auto mt-6 py-8 space-y-5 bg-white">
+                <div class="w-full border-r-2 px-8 border-dashed space-y-6">
+                    <div class="border-b-2 border-dashed pb-4">
+                        <h2 class="text-2xl font-semibold font-raleway">Select Your Seat</h2>
+                    </div>
+                    <div class="flex justify-between border-b-2 border-dashed pb-4">
+                        <p class="flex items-center font-inter"><span><img src="./assets/images/seat-gray.png" alt=""></span> Available</p>
+                        <p class="flex items-center font-inter"><span><img src="./assets/images/seat-green-filled.png" alt=""></span> Selected</p>
+                    </div>
+                    <div class="flex justify-end pb-4">
+                        <span><img class="px-12 py-4 bg-gray-200 rounded-xl" src="./assets/images/dirve-wheel.svg" alt=""></span>
+                    </div>
+                    <!-- 40 seats -->
+                    <div class="grid grid-cols-5 font-inter font-medium text-[#03071280] gap-4 grid-rows-10">
+                        <div>
+                            <button class="w-1/2 py-6 rounded-xl">A</button>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6  bg-gray-100 rounded-xl">A1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">A2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">A3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">A4</button>
+                        </div>
+                        
+                        <div class="flex">
+                            <button class="w-1/2 py-6 rounded-xl">B</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">B1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">B2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">B3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">B4</button>
+                        </div>
+                        
+                        <div class="flex">
+                            <button class="w-1/2 py-6 rounded-xl">C</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">C1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">C2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">C3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">C4</button>
+                        </div>
+                        
+                        <div class="flex">
+                            <button class="w-1/2 py-6 rounded-xl">D</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">D1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">D2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">D3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">D4</button>
+                        </div>
+                        
+                        <div class="flex">
+                            <button class="w-1/2 py-6 rounded-xl">E</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">E1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">E2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">E3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">E4</button>
+                        </div>
+                        
+                        <div class="flex ">
+                            <button class="w-1/2 py-6 rounded-xl">F</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">F1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">F2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">F3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">F4</button>
+                        </div>
+                        
+                        <div class="flex">
+                            <button class="w-1/2 py-6 rounded-xl">G</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">G1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">G2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">G3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">G4</button>
+                        </div>
+                        
+                        <div class="flex">
+                            <button class="w-1/2 py-6 rounded-xl">H</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">H1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">H2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">H3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">H4</button>
+                        </div>
+                        
+                        <div class="flex ">
+                            <button class="w-1/2 py-6 rounded-xl">I</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">I1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">I2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">I3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">I4</button>
+                        </div>
+                        
+                        <div class="flex">
+                            <button class="w-1/2 py-6 rounded-xl">J</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">J1</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">J2</button>
+                        </div>
+                        
+                        <div class="flex justify-center">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">J3</button>
+                        </div>
+                        
+                        <div class="flex justify-end">
+                            <button class="w-1/2 py-6 bg-gray-100 rounded-xl">J4</button>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="px-8">
+                    <div class="border-b-2 border-dashed pb-4">
+                        <h2 class="text-2xl font-semibold font-raleway">Select Your Seat</h2>
+                    </div>
+                    <div class="space-y-6 bg-gray-100 mt-6 p-8 rounded-xl">
+                        <div class="flex justify-between font-inter font-medium border-b-2 border-dashed">
+                            <h4>Seat <span>0</span></h4>
+                            <h4>Class</h4>
+                            <h4>Price</h4>
+                        </div>
+                        <div class="font-inter border-b-2 border-solid">
+                            <p class="flex justify-between items-center"><span>C2</span> <span>Economy</span> <span>50</span></p>
+                            <p class="flex justify-between items-center"><span>C2</span> <span>Economy</span> <span>50</span></p>
+                            <p class="flex justify-between items-center"><span>C2</span> <span>Economy</span> <span>50</span></p>
+                            <p class="flex justify-between items-center"><span>C2</span> <span>Economy</span> <span>50</span></p>
+                        </div>
+                        <div class="flex justify-between font-inter font-medium">
+                            <h3>Total Price</h3>
+                            <h3>BDT 1100</h3>
+                        </div>
+                        <div class="bg-white flex justify-between items-center p-2 rounded-xl">
+                            <input placeholder="Have any coupon?" type="text">
+                            <button class="btn bg-[#1DD100] text-white font-inter font-semibold">Apply</button>
+
+                        </div>
+                        <div class="flex justify-between font-inter font-medium">
+                            <h3>Grand Total</h3>
+                            <h3>BDT 1100</h3>
+                        </div>
+                    </div>
+                    <!-- Form -->
+                    <div class="mt-6">
+                        <form class="space-y-5">
+                            <label class="font-inter font-semibold" for="name">Passenger Name*</label>
+                            <input id="name" class="w-full p-4 rounded-xl border-2 border-gray-200 border-solid" placeholder="Enter your name" type="text" required>
+                            <br><br>
+                            <label class="font-inter font-semibold" for="name">Phone Number*</label>
+                            <input id="name" class="w-full p-4 rounded-xl border-2 border-gray-200 border-solid" placeholder="Enter your phone number" type="text" required>
+                            <br><br>
+                            <label class="font-inter font-semibold" for="name">Email ID</label>
+                            <input id="name" class="w-full p-4 rounded-xl border-2 border-gray-200 border-solid" placeholder="Enter your email id" type="email" required>
+                            <button class="btn bg-[#1DD100] text-white text-base rounded-2xl font-raleway font-extrabold w-full">Next</button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
