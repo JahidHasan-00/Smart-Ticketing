@@ -4,8 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart-Ticketing</title>
+    <!-- Tailwind and DaisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <header class="container mx-auto">
+        <!-- Navbar start -->
+        <div>
+            <div class="navbar bg-base-100 font-raleway">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium ">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl font-extrabold">B-Busways</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal text-base px-1 font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end ">
+                  <a class="btn flex items-center bg-[#1DD1001A] font-bold text-[#1DD100] justify-center text-base"><span>Bus</span> <span><img src="./assets/images/bus-icon.png" alt=""></span></a>
+                </div>
+              </div>
+        </div>
+        <!-- Banner Section start -->
+        <div class="flex bg-center justify-center items-center bg-[url('./assets/images/banner.png')] bg-no-repeat bg-cover rounded-3xl h-screen">
+            <div class="font-raleway w-3/5 text-center space-y-12">
+                <h1 class="text-5xl font-extrabold text-white"><span class="">End-to-End Travel with</span><br>
+                <span class="text-[#1DD100]">P Paribahan</span>
+                </h1>
     
+                <p class="text-white font-inter">Enjoy seamless travel experiences, reliable schedules, and affordable fares. Book your tickets now and embark on your next adventure with confidence .</p>
+                <button class="btn bg-[#1DD100] font-bold text-base">Buy Tickets</button>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Main Section -->
+    <main class="mt-28">
+        <!-- Best offers section -->
+        <section class="container mx-auto">
+            <h1 class="text-4xl font-raleway font-bold text-center mb-12">Best offers for you</h1>
+            <div class="flex gap-6 flex-col-reverse lg:flex-row bg-center">
+                <!-- 15% off -->
+                <div class="flex  bg-amber-400 rounded-3xl">
+                     <div class="flex flex-col justify-center font-inter p-12">
+                        <h2 class="font-black text-4xl">15% OFF</h2>
+                        <h4 class="font-semibold text-2xl">on your next purchase</h4>
+                        <p class="font-medium text-base text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="./assets/images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="flex flex-col font-raleway justify-center px-10 py-14">
+                        <h2 class="font-bold text-3xl">NEW<sub>15</sub></h2>
+                        <h4 class="font-medium text-2xl text-[#03071266]">Coupon Code</h4>
+                    </div>
+                </div>
+
+                <!-- 20% off -->
+                <div class="flex bg-red-300 rounded-3xl">
+                    <div class="flex flex-col justify-center font-inter p-12">
+                        <h2 class="font-black text-4xl">20% OFF</h2>
+                        <h4 class="font-semibold text-2xl">on your next purchase</h4>
+                        <p class="font-medium text-base text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="./assets/images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="flex flex-col font-raleway justify-center p-5 py-14">
+                        <h2 class="font-bold text-3xl">Couple 20</h2>
+                        <h4 class="font-medium text-2xl text-[#03071266]">Coupon Code</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-16">
+                <button class="btn text-[#1DD100] border-2 border-[#1DD100] bg-white">See All Offers</button>
+            </div>
+        </section>
+
+        <!-- P.H Paribahan Section -->
+        <section class="border-t-2 bg-gray-100 mt-28 border-[#1DD100] rounded-t-[88px]">
+            <div class="text-center py-14">
+                <h2 class="font-bold text-4xl font-raleway">P.H Paribahan</h2>
+                <p class="font-inter w-3/5 mx-auto mt-6">Discover seamless transportation solutions with our paribahan services. We pride ourselves on providing safe, reliable, and comfortable journeys for our passengers.</p>
+            </div>
+
+            <!-- Greenline Paribahan -->
+            <div class="container mx-auto">
+                <div class="flex justify-between rounded-3xl bg-white">
+                    <div class="flex-1 p-8 space-y-6">
+                        <div class="flex gap-3">
+                            <img src="./assets/images/bus-logo.png" alt="bus-logo">
+                            <div class="flex-1">
+                                <h3 class="font-raleway font-bold text-3xl">Greenline Paribahan</h3>
+                                <p class="font-inter text-[#03071299] font-normal">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                            <a class="btn flex items-center bg-[#1DD1001A] font-bold text-[#1DD100] justify-center text-base"><span><img src="./assets/images/seat-green.png" alt=""></span> <span>40</span> <span>Seats left</span> </a>
+                        </div>
+                        <div class="bg-gray-100 p-8 rounded-3xl">
+                            <div class="font-raleway pb-6 flex justify-between items-center border-b-2 border-dashed">
+                                <h4 class="font-semibold text-[#03071299]">Route</h4>
+                                <h4 class="font-semibold">Dhaka - Sylhet</h4>
+                            </div>
+                            <div class="font-raleway py-6 flex justify-between items-center border-b-2 border-dashed">
+                                <h4 class="font-semibold text-[#03071299]">Departure Time</h4>
+                                <h4 class="font-semibold">9:00 PM</h4>
+                            </div>
+                            <div class="flex pt-6 justify-between ">
+                                <button class="bg-gray-200 rounded-xl p-4 ">Boarding Point - Laxmipur</button>
+                                <button class="bg-gray-200 rounded-xl p-4">Dropping Point - Bogura</button>
+                                <button class="bg-gray-200 rounded-xl p-4">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="./assets/images/info-devider.png" alt="">
+                    </div>
+                    <div class="font-raleway flex flex-col justify-center items-center py-12 px-12">
+                        <img src="./assets/images/fare.png" alt="fare-png">
+                        <h2 class="text-3xl font-bold">550 Taka</h2>
+                        <h4 class="font-semibold text-[#03071299] text-2xl">Per Seat</h4>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Select Your Seat -->
+                <div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+
+    </footer>
 </body>
 </html>
