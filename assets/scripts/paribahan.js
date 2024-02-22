@@ -27,47 +27,84 @@ document.getElementById('input-coupon').addEventListener('keyup', function(event
     }
 })
 
+/*********** */
 
-// 40 seats 
-//For A1 seat
-function selectSeats(){
-     setAttributeById('A1');
+const allBtn = document.getElementsByClassName('seat-btn');
+let count = 40;
+
+for(const btn of allBtn){
+    btn.addEventListener('click', function(e){
+        count -= 1;
+        e.target.style = 'background: #1ED202';
+        const seatName = e.target.innerText;
+        const appendChildContainer = document.getElementById('append-container');
+
+        const div = document.createElement('div');
+
+        const span1 = document.createElement('span');
+        span1.innerText = seatName;
+        const span2 = document.createElement('span');
+        span2.innerText = 'Economy';
+        const span3 = document.createElement('span');
+        span3.innerText = 550;
+
+        //p.innerText = seatName + ' Economy ' + '550';
+        div.appendChild(span1);
+        div.appendChild(span2);
+        div.appendChild(span3);
+        // 
+        appendChildContainer.appendChild(div);
+
+        //total Price calculation
+        // const total = document.getElementById('total-price').innerText;
+        // const sum = parseInt(total) + parseInt(span3.innerText);
+
+        //grand total price calculation
+        totalPrice('total-price', parseInt(span3.innerText));
+        grandTotal();
+        // setInnerText('total-price', sum);
+        setInnerText('seat-num', count);
+    });
+}
+
+function setInnerText(elementId, seatNum){
+    document.getElementById(elementId).innerText = seatNum;
+}
+
+
+function totalPrice(id, val){
+    const total = document.getElementById(id).innerText;
+    const sum = parseInt(total) + parseInt(val);
+    setInnerText('total-price', sum);
+}
+
+function grandTotal(){
+    // const grandTotal = document.getElementById(id).innerText;
+    // const sum = parseInt(grandTotal) + parseInt(val);
     
-}
-function seatA2(){
-    setAttributeById('A2');
-}
-function seatA3(){
-    setAttributeById('A3');
-}
-function seatA4(){
-    setAttributeById('A4');
-}
+    const total = document.getElementById('total-price').innerText;
+    const convertedToTotal = parseInt(total);
+    setInnerText('grand-price', convertedToTotal);
+    // discount price 
+    const inputVal = document.getElementById('input-coupon').value;
+    
+    if(inputVal === 'NEW15'){
+        const discountInitial = document.getElementById('discount');
+        const afterDiscount = (15/100)*convertedToTotal;
+        discountInitial.innerText = afterDiscount;
+        //grand total
+        total.innerText = convertedToTotal - parseFloat(afterDiscount);
+        const button = document.getElementById('btn');
+        button.setAttribute('disabled', true);
 
-/******** */
-function seatB1(){
-    setAttributeById('B1');
-}
-function seatB2(){
-    setAttributeById('B2');
-}
-function seatB3(){
-    setAttributeById('B3');
-}
-function seatB4(){
-    setAttributeById('B4');
-}
-
-/********* */
-function seatC1(){
-    setAttributeById('C1');
-}
-function seatC2(){
-    setAttributeById('C2');
-}
-function seatC3(){
-    setAttributeById('C3');
-}
-function seatC4(){
-    setAttributeById('C4');
+    }
+    else if(inputVal === 'Couple 20'){
+        const discountInitial = document.getElementById('discount');
+        const afterDiscount = (20/100)*convertedToTotal;
+        discountInitial.innerText = afterDiscount;
+        //grand total
+        total.innerText = convertedToTotal - parseFloat(afterDiscount);
+        const button = document.getElementById('btn');
+        button.setAttribute('disabled', true);
+    }
 }
