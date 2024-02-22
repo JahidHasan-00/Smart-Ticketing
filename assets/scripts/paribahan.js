@@ -93,7 +93,8 @@ function grandTotal(){
         const afterDiscount = (15/100)*convertedToTotal;
         discountInitial.innerText = afterDiscount;
         //grand total
-        total.innerText = convertedToTotal - parseFloat(afterDiscount);
+        const grandTotal = document.getElementById('grand-price');
+        grandTotal.innerText = convertedToTotal - parseFloat(afterDiscount);
         const button = document.getElementById('btn');
         button.setAttribute('disabled', true);
 
@@ -103,7 +104,8 @@ function grandTotal(){
         const afterDiscount = (20/100)*convertedToTotal;
         discountInitial.innerText = afterDiscount;
         //grand total
-        total.innerText = convertedToTotal - parseFloat(afterDiscount);
+        const grandTotal = document.getElementById('grand-price');
+        grandTotal.innerText = convertedToTotal - parseFloat(afterDiscount);
         const button = document.getElementById('btn');
         button.setAttribute('disabled', true);
     }
