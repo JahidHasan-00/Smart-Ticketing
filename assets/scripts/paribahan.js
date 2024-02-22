@@ -27,3 +27,47 @@ document.getElementById('input-coupon').addEventListener('keyup', function(event
     }
 })
 
+
+// 40 seats 
+//For A1 seat
+function selectSeats(){
+     setAttributeById('A1');
+    
+}
+function seatA2(){
+    setAttributeById('A2');
+}
+function seatA3(){
+    setAttributeById('A3');
+}
+function seatA4(){
+    setAttributeById('A4');
+}
+
+/******** */
+function seatB1(){
+    setAttributeById('B1');
+}
+function seatB2(){
+    setAttributeById('B2');
+}
+function seatB3(){
+    setAttributeById('B3');
+}
+function seatB4(){
+    setAttributeById('B4');
+}
+
+/********* */
+function seatC1(){
+    setAttributeById('C1');
+}
+function seatC2(){
+    setAttributeById('C2');
+}
+function seatC3(){
+    setAttributeById('C3');
+}
+function seatC4(){
+    setAttributeById('C4');
+}
